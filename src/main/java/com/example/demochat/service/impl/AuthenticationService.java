@@ -1,6 +1,7 @@
-package com.example.demochat.service;
+package com.example.demochat.service.impl;
 
 import com.example.demochat.entity.User;
+import com.example.demochat.service.IUserService;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -12,9 +13,9 @@ import java.util.ArrayList;
 @Service
 public class AuthenticationService implements AuthenticationProvider {
 
-    private final UserService userService;
+    private final IUserService userService;
 
-    public AuthenticationService(UserService userService) {
+    public AuthenticationService(IUserService userService) {
         this.userService = userService;
     }
 

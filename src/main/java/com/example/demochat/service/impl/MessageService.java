@@ -1,19 +1,21 @@
-package com.example.demochat.service;
+package com.example.demochat.service.impl;
 
 import com.example.demochat.dto.ChatForm;
 import com.example.demochat.entity.Message;
 import com.example.demochat.repository.MessageRepo;
+import com.example.demochat.service.IMessageService;
+import com.example.demochat.service.IUserService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class MessageService {
+public class MessageService implements IMessageService {
 
     private final MessageRepo messageRepo;
-    private final UserService userService;
+    private final IUserService userService;
 
-    public MessageService(MessageRepo messageRepo, UserService userService) {
+    public MessageService(MessageRepo messageRepo, IUserService userService) {
         this.messageRepo = messageRepo;
         this.userService = userService;
     }

@@ -1,11 +1,12 @@
-package com.example.demochat.service;
+package com.example.demochat.service.impl;
 
 import com.example.demochat.entity.User;
 import com.example.demochat.repository.UserRepo;
+import com.example.demochat.service.IUserService;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UserService {
+public class UserService implements IUserService {
 
     private final UserRepo userRepo;
 

@@ -1,7 +1,7 @@
 package com.example.demochat.controller.impl;
 
 import com.example.demochat.dto.ChatForm;
-import com.example.demochat.service.MessageService;
+import com.example.demochat.service.IMessageService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,9 +14,9 @@ import java.security.Principal;
 @RequestMapping("/chat")
 public class ChatController {
 
-    private MessageService messageService;
+    private IMessageService messageService;
 
-    public ChatController(MessageService messageService) {
+    public ChatController(IMessageService messageService) {
         this.messageService = messageService;
     }
 
