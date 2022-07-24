@@ -1,6 +1,6 @@
 package com.example.demochat.config;
 
-import com.example.demochat.service.impl.AuthenticationService;
+import com.example.demochat.service.AuthenticationService;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

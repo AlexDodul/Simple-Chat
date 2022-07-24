@@ -1,7 +1,6 @@
-package com.example.demochat.service.impl;
+package com.example.demochat.service;
 
 import com.example.demochat.entity.User;
-import com.example.demochat.service.IUserService;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
